@@ -9,7 +9,9 @@ export const RootLayout = () => {
       <Navbar />
       <Outlet />
       <div className="player">
-        <span className="material-symbols-outlined icon">play_arrow</span>
+        <div className="icon-control">
+          <span className="material-symbols-outlined icon">play_arrow</span>
+        </div>
       </div>
     </Wrapper>
   );
@@ -26,8 +28,12 @@ const Wrapper = styled.main`
     height: 60px;
     background-color: var(--black-main);
     display: grid;
+    align-items: center;
+    padding-left: 22px;
     .icon {
       color: white;
+      font-size: var(--size-600);
+      cursor: pointer;
     }
   }
 `;
