@@ -23,7 +23,9 @@ const Wrapper = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  border-radius: 4px;
+  /* border-radius: 4px; */
+  text-transform: uppercase;
+  font-family: var(--agency);
 
   cursor: pointer;
   .svg-control {
@@ -50,7 +52,7 @@ const Wrapper = styled.div`
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     transition: all 500ms ease-in-out;
-    border-radius: 4px;
+    /* border-radius: 4px; */
   }
   &:hover {
     border-left: 1px solid rgba(0, 0, 0, 0);
