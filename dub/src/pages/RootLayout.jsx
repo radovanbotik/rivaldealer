@@ -50,6 +50,7 @@ const Wrapper = styled.main`
   .player {
     position: fixed;
     bottom: 0;
+    left: 85px;
     width: 100vw;
     height: 60px;
     background-color: var(--black-main);

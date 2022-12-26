@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "AgencyFB";
+  src: url(./assets/fonts/AgencyFB.ttf);
+}
+@font-face {
+  font-family: "FuturaCondensed";
+  src: url(./assets/fonts/FuturaCondensed.ttf);
+}
 :root {
   /* Increase or decrease the number 
   to change the vertical spacing globally*/
@@ -53,6 +61,8 @@
 
   --ibm-plex: "IBM Plex Serif", serif;
   --outfit: "Outfit", sans-serif;
+  --agency: "AgencyFB";
+  --futura: "FuturaCondensed";
 }
 
 html {
@@ -79,11 +89,17 @@ h1 {
   /* margin: var(--vspace-1) 0 var(--vspace-1) 0; */
   line-height: calc(3.2917 / var(--space) * var(--vspace));
   font-family: var(--ibm-plex);
+  font-family: var(--agency);
+  font-family: var(--futura);
+
   font-weight: 400;
 }
 
 .h1-bold {
   font-family: var(--outfit);
+  font-family: var(--agency);
+  font-family: var(--futura);
+
   font-weight: 500;
 }
 
@@ -91,11 +107,15 @@ h2 {
   /* margin: var(--vspace-2) 0 var(--vspace-3) 0; */
   line-height: 1em;
   font-family: var(--ibm-plex);
+  font-family: var(--agency);
+
   font-weight: 400;
 }
 
 .h2-bold {
   font-family: var(--outfit);
+  font-family: var(--agency);
+
   font-weight: 600;
 }
 
@@ -116,6 +136,7 @@ h1 {
   font-size: 3.2917em;
   word-break: break-word;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .title,
@@ -162,6 +183,9 @@ h5 {
 h6 {
   font-size: 1em;
   font-family: var(--ibm-plex);
+  font-family: var(--agency);
+  font-family: var(--futura);
+
   font-weight: 400;
   text-transform: capitalize;
 }
