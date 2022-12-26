@@ -25,6 +25,7 @@ const Wrapper = styled.div`
   align-items: center;
   overflow-x: hidden;
   overflow-y: hidden;
+  background-color: var(--white-main);
   .logo-control {
     position: absolute;
     top: 60px;
@@ -34,6 +35,7 @@ const Wrapper = styled.div`
       width: 100%;
       height: 100%;
       object-fit: cover;
+      /* fill: var(--white-main); */
     }
   }
   .icon-control {
@@ -45,6 +47,7 @@ const Wrapper = styled.div`
       font-size: var(--size-700);
       font-size: 4em;
       justify-self: center;
+      /* color: var(--white-main); */
     }
   }
 `;
