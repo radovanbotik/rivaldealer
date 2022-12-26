@@ -7,6 +7,7 @@ import back from "../assets/rivaldealer-back.jpg";
 import concrete from "../assets/concrete.jpg";
 import femalewindow from "../assets/femalewindow.jpg";
 import stairs from "../assets/stairs.jpg";
+import { Logotext } from "../assets";
 
 export const Frontpage = () => {
   return (
@@ -23,6 +24,9 @@ export const Frontpage = () => {
     >
       <section className="intro">
         <div className="control">
+          <div className="logo-control">
+            <Logotext />
+          </div>
           <h1>
             rival
             <span className="h1-bold"> dealer </span>
@@ -209,8 +213,18 @@ const Wrapper = styled.div`
     .control {
       display: grid;
       justify-items: start;
+      justify-items: center;
       gap: var(--vspace-3);
       padding: 40px;
+      .logo-control {
+        max-width: 400px;
+        align-self: center;
+        justify-self: center;
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
       h1 {
         word-wrap: break-word;
         max-width: 500px;
