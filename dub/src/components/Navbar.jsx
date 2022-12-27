@@ -8,47 +8,33 @@ export const Navbar = () => {
       <div className="logo-control">
         <Logographic />
       </div>
-      <div className="icon-control">
-        <span className="material-symbols-outlined icon">drag_handle</span>
-      </div>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
-  border-left: 2px solid var(--black-main);
-  border-right: 2px solid var(--black-main);
+  border-left: 1px solid var(--black-main);
+  border-right: 1px solid var(--black-main);
   width: 90px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  justify-content: center;
   background-color: var(--white-main);
+  box-shadow: inset 0px 0px 5px 0px var(--black-main);
+
   .logo-control {
-    position: absolute;
     top: 60px;
     width: 60px;
     height: 60px;
+    cursor: pointer;
     svg {
       width: 100%;
       height: 100%;
       object-fit: cover;
 
       /* fill: var(--white-main); */
-    }
-  }
-  .icon-control {
-    /* margin-top: auto; */
-    flex: 1;
-    display: grid;
-    place-content: center;
-    .icon {
-      font-size: var(--size-700);
-      font-size: 4em;
-      justify-self: center;
-      /* color: var(--white-main); */
     }
   }
 `;

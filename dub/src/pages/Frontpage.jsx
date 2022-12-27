@@ -5,9 +5,9 @@ import rivaldealer from "../assets/rivaldealer-cover.png";
 import couple from "../assets/couple.jpg";
 import back from "../assets/rivaldealer-back.jpg";
 import concrete from "../assets/concrete.jpg";
-import femalewindow from "../assets/femalewindow.jpg";
 import stairs from "../assets/stairs.jpg";
 import { Logotext } from "../assets";
+import epfront from "../assets/ep-front.jpg";
 
 export const Frontpage = () => {
   return (
@@ -23,14 +23,17 @@ export const Frontpage = () => {
       }}
     >
       <section className="intro">
+        <div className="image-control">
+          <img src={rivaldealer} alt="" />
+        </div>
         <div className="control">
           <div className="logo-control">
             <Logotext />
           </div>
-          <h1>
+          {/* <h1>
             rival
             <span className="h1-bold"> dealer </span>
-          </h1>
+          </h1> */}
           <div className="underline"></div>
           <Button text={"view more"} />
         </div>
@@ -44,24 +47,22 @@ export const Frontpage = () => {
         </div>
         <div className="text-section">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            tempora consequatur, omnis natus autem, officia tempore nobis
-            voluptates totam commodi, nam ab. Unde, molestiae dolorem. Eligendi
-            minima ad velit blanditiis dicta incidunt? Debitis velit quibusdam
-            quasi tempore aperiam natus sunt officia quos omnis consectetur
-            voluptatum, eos commodi ex voluptate! Excepturi, tenetur optio.
-            Aliquam nemo ab quis consequuntur aut maiores unde cupiditate,
-            dolores amet dignissimos cum blanditiis itaque alias, modi quas
-            porro a eveniet in similique, temporibus nihil incidunt quia nobis
-            sed. Necessitatibus porro nemo quidem, laudantium perferendis fuga
-            totam nostrum corrupti temporibus molestias iste, aliquid accusamus
-            ex modi aspernatur eos impedit labore est numquam possimus? Nesciunt
-            eveniet consequuntur atque, natus explicabo, sunt molestias omnis
-            iusto distinctio eaque corporis recusandae eum iste laudantium?
-            Ducimus fugit nemo pariatur adipisci fuga cupiditate modi impedit
-            necessitatibus quia? Sed et vitae eveniet fuga totam explicabo
-            magnam asperiores dignissimos repellendus, voluptate, quas non illum
-            id necessitatibus.
+            The seismic stylistic shift that Bevan's made on these three
+            tracks—two of which, true to recent form, run well over the
+            10-minute mark—is immediately apparent on the opening minutes of
+            Rival Dealer's title track, when a distorted vocal sample of
+            adult-contemporary cheeseball Gavin DeGraw's "More Than Anyone"
+            (yes, really) gives way to a furious drum break, making for Burial's
+            most straightforwardly uptempo move to date. The rhythm
+            simultaneously sounds crisp and hissing, eventually disintegrating
+            in a blare of police-scanner noise before everything goes truly
+            pear-shaped with a monstrous, buzzing bassline, as a woodblock
+            rhythm from the Untrue days clicks and clacks below the chaos. In
+            the few interviews that Bevan has given throughout his career, he's
+            outlined Burial's conceptual aims as a tribute to the rave music he
+            didn't get a chance to grow up with but experienced second-hand; the
+            unbridled intensity of "Rival Dealer" is arguably his most
+            explicitly rave-y move yet.
           </p>
           <div className="control">
             <h6>a1</h6>
@@ -83,7 +84,7 @@ export const Frontpage = () => {
             ></iframe>
           </div>
           <div className="preview preview-front">
-            <img src={back} alt="" />
+            <img src={epfront} alt="" />
           </div>
         </div>
       </section>
@@ -210,6 +211,14 @@ const Wrapper = styled.div`
     display: grid;
     place-content: center;
     width: 40vw;
+    position: relative;
+    .image-control {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
     .control {
       display: grid;
       justify-items: start;
@@ -229,6 +238,10 @@ const Wrapper = styled.div`
         word-wrap: break-word;
         max-width: 500px;
       }
+      .button {
+        position: absolute;
+        top: 700px;
+      }
     }
   }
   .section-two {
@@ -247,6 +260,7 @@ const Wrapper = styled.div`
         width: 100%;
         height: 100%;
         position: relative;
+
         /* border: 4px solid var(--black-main); */
         /* &:before {
           content: "";
@@ -291,6 +305,7 @@ const Wrapper = styled.div`
     .preview {
       aspect-ratio: 16/9;
       background-color: black;
+
       iframe {
         width: 100%;
         height: 100%;
